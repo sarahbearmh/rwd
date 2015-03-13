@@ -4,16 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width">
 
-  <title>Haute Corture</title>
+  <title>RWD Practice: Haute Corture</title>
  
   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">  
-  
+  <link href='http://fonts.googleapis.com/css?family=Philosopher:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">	
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">	
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<!-- http://hautecouture.at/presse.htm icon/logo -->
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
   <link rel="icon" type="image/png" href="/favicon.ico">
-	
 	
 </head>
 <body>
@@ -25,29 +26,38 @@
 	<header>
 		
 <!-- Logo: 200x300 -->
-		<img src="img/Logo.png" alt="Logo" id="Home">	
+		<img src="img/logo.png" alt="Logo" id="home">
 
 <!-- Nav -->
 		<nav>
 			<ul>
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#About">About</a></li>
-				<li><a href="#Contact">Contact</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+
+<div class="clearfix"></div>
 			</ul>
+
 		</nav>
 
 	</header>
-
 <!-- Main -->
 	<main>
 		
 <!-- Video from YouTube -->
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/ODuOED0EGEI" frameborder="0" allowfullscreen></iframe>
+	<iframe class="desktop-video" width="420" height="315" src="https://www.youtube.com/embed/Wqkgo6fV8q8" frameborder="0" allowfullscreen></iframe>	
+
+
 		<!-- Article -->
-		<article id="About">
+		<article>
 			
 			<section>
-				<h1>Haute Corture</h1>			
+				
+				<!-- Video from YouTube -->
+				<iframe class="mobile-video" width="420" height="315" src="https://www.youtube.com/embed/Wqkgo6fV8q8" frameborder="0" allowfullscreen></iframe>
+
+
+				<h1 id="about">Haute Corture</h1>			
 				<p>Haute couture French French for "high sewing" or "high dressmaking" or "high fashion") refers to the creation of exclusive custom-fitted clothing. Haute couture is fashion that is constructed by hand from start to finish, made from high quality, expensive, often unusual fabric and sewn with extreme attention to detail and finished by the most experienced and capable sewers, often using time-consuming, hand-executed techniques.</p>
 				<img src="img/1.jpg" alt="">
 			</section>
@@ -64,14 +74,16 @@
 <!-- Footer -->
 	<footer>
 
-		<h3 id="Contact">Contact Us</h3>
+		<h3 id="contact">Contact Us</h3>
 <!-- Embed Contact Form from TypeForm -->
+		<!-- Change the width and height values to suit you best -->
+		<div class="typeform-widget" data-url="https://manikoth.typeform.com/to/nugyrE" data-text="Contact Form" style="width:100%;height:500px;"></div>
+		<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 		
-<div class="typeform-widget" data-url="https://manikoth.typeform.com/to/nugyrE" data-text="Contact Form" style="width:100%;height:500px;"></div>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_nugyrE&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div>
 		
 		<p>Content from <a href="http://en.wikipedia.org/wiki/Haute_couture">WikiPedia</a> &copy; 2015</p>
+
+		<a href="#home">&uarr; Top</a>
 
 	</footer>
   

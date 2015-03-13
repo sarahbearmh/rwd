@@ -1,11 +1,63 @@
-body{
+/* GLOBAL */
+body {
 	background: url("../img/bg.png");
+	font-family: 'Philosopher', sans-serif;
 }
+h1, h3{
+	color: #264E7D;
+}
+nav{
+	  display: inline-block;
+  margin-bottom: 5%;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	float: left;
+	margin: 0 5px;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+	background-color: #FF72BF;
+	text-decoration: none;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	padding: 10px;
+	color: #264E7D;
+	font-weight: 600;
+
+}
+nav ul li a:hover{
+	-webkit-animation: navSpin 2s linear 1;
+	animation: navSpin 2s linear 1;
+}
+
+
+/* http://codepen.io/shayhowe/pen/bmayf/ */
+@-webkit-keyframes navSpin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes navSpin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /* LAYOUT */
 .container {
-	background: red;
 	margin: 0 auto;
-	width: 90%;
+	width: 90%; /* Designers Choice */
+	max-width: 1440px; /* Designers Choice */
 }
 
 article section {
@@ -20,11 +72,105 @@ iframe, img {
 	width: 100%;
 }
 
-/* Desktop Query */
-@media (min-width: 960px ) {
+/* Max dimensions for logo */
+#home {
+	max-width: 300px;
+	width: 300px;
+}
 
-	#home {
-		width: 300px;
+.clearfix{
+	float: none;
+	clear:both;
+}
+/* Large Desktop minimum */
+@media (min-width: 1025px) {
+	
+	/* Yellow BG for testing */
+	/*body { background: yellow; }*/
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 640px;
+		width: 640px;
 	}
 
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+	/* Center Video */
+	main {
+		text-align: center;
+	}
+
+}
+
+/* Desktop (Standard) */
+@media (max-width: 1024px ) {
+	
+	/* Red BG for testing */
+	/*body { background: red; }*/
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+}
+
+/* Tablet  */
+@media (max-width: 768px ) {
+	
+	/* Green BG for Testing */
+	/*body { background: green; }*/
+	
+	/* Hide for Desktop */
+	.desktop-video {
+		display: none;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		width: 100%;
+		display: block;
+	}
+
+	/* Single Colum Tablet */
+	article section {
+		float: none;
+		width: 100%;
+		width: 100%;
+	}
+
+}
+
+
+/* Mobile (Landscape) */
+@media (max-width: 480px ) {
+	
+	/* Blue BG for Testing */
+	/*body { background: blue; }*/
+	nav{
+		display: block;
+	}
+	nav ul li{
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		float:none;
+		margin: 20px auto;
+	}
+	nav ul li a:link,
+	nav ul li a:visited{
+		padding: 5px 10px;
+	}
 }
